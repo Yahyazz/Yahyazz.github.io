@@ -1,0 +1,337 @@
+body {
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 5;
+    -moz-box-shadow: 0 4px 20px 1px #00000044;
+    -webkit-box-shadow: 0 4px 20px 1px #00000044;
+    box-shadow: 0 4px 20px 1px #00000044;
+    vertical-align: middle;
+}
+
+.logo {
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.nav {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+.nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #7a7a7aa9;
+    transition: ease-in 500ms;
+}
+
+.nav a:hover,
+a.on {
+    color: #000000;
+    /*animation: color 400ms;*/
+    transition: ease-out 1s;
+}
+
+.nav-item {
+    margin-left: 5px;
+}
+
+.container {
+    margin-top: 100px;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.landing {
+    padding-bottom: 40px;
+}
+
+.main-landing {
+    border-bottom: 4px solid #000000a9;
+}
+
+.landing h1 {
+    font-family: "Adidas Half Block 2016", Tahoma;
+    text-transform: uppercase;
+    font-size: 1500%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 70px;
+    border-radius: 12px;
+    /* transition: ease-in 500ms; */
+    animation: loop 4s infinite;
+}
+
+
+/*
+.landing h1:hover {
+    background-color: #fcfcfc;
+    -moz-box-shadow: 0 4px 10px 2px #000000;
+    -webkit-box-shadow: 0 4px 10px 2px #000000;
+    box-shadow: 0 4px 10px 2px #000000;
+    transition: ease-out 500ms;
+}
+*/
+
+.landing p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 130%;
+}
+
+.landing a {
+    color: #000000;
+    text-decoration: none;
+    transition: ease-in 500ms;
+}
+
+.landing a:hover {
+    color: #cc6b1b;
+    transition: ease-out 400ms;
+}
+
+.down {
+    opacity: 0.5;
+    transition: opacity ease-in-out 400ms;
+    animation: down 2s infinite;
+}
+
+img.down:hover {
+    opacity: 1;
+}
+
+.more {
+    margin-top: 0px;
+}
+
+.more h1 {
+    text-transform: uppercase;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.column-product {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.product {
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 90px;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    z-index: 2;
+    transition: ease-in-out 500ms;
+}
+
+.product:hover {
+    background-color: #fcfcfc;
+    -moz-box-shadow: 0 4px 20px #00000044;
+    -webkit-box-shadow: 0 4px 20px #00000044;
+    box-shadow: 0 4px 20px #00000044;
+    transform: translateY(-4px);
+    transition: ease-in-out 500ms;
+    /* filter: brightness(85%); */
+}
+
+div.product:before {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 30px;
+    content: attr(title);
+    padding: 0.5em 1em;
+    position: absolute;
+    text-align: center;
+    transform: translate(0%, 120%);
+    transition: transform 500ms cubic-bezier(0.27, 0.54, 0.34, 1.93);
+    width: 240px;
+    z-index: -1;
+    opacity: 0.1;
+    text-shadow: 0px 0px 2px #000000;
+    background-color: #000000;
+}
+
+div.product:hover:before {
+    transition: ease-in-out 400ms;
+    transform: translate(0%, 100%);
+    z-index: 3;
+    opacity: 1;
+    text-shadow: 0px 0px 30px #000000;
+    background-color: #00000044;
+}
+
+
+/*
+div.pants:before {
+    width: 200px;
+    vertical-align: middle;
+    text-align: left;
+    transform: translate(-7%, 120%);
+}
+
+div.pants:hover:before {
+    transform: translate(-7%, 100%);
+}
+*/
+
+div.price {
+    margin: 20px;
+}
+
+.product h3 {
+    margin: 7px 0 0 0;
+}
+
+.product h3:first-child {
+    font-family: sans-serif;
+}
+
+.more a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+.more a:hover {
+    color: #000000;
+}
+
+.price a {
+    transition: ease-in 500ms;
+}
+
+.price a:hover {
+    color: #000000;
+    transition: ease-out 500ms;
+}
+
+.column-footer {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer .column2 {
+    margin-right: 100px;
+    margin-top: 20px;
+    float: right;
+}
+
+.footer {
+    background-color: #272727;
+    width: 100%;
+    height: 70px;
+    margin: 10px 0 0 0;
+}
+
+.footer p {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.footer img.logo {
+    margin-left: 100px;
+}
+
+.column2 img {
+    filter: grayscale(100%);
+    transition: filter ease-in-out 400ms;
+}
+
+.column2 img:hover {
+    filter: none;
+}
+
+.med {
+    margin-left: 5px;
+}
+
+
+/* +CSS for About Page */
+
+.profile-logo {
+    margin: 120px auto 0 auto;
+    width: 300px;
+    height: 300px;
+    border: 0 solid #000000;
+    border-radius: 50%;
+    background: #000000 url(images/byme-logo-profile.png) no-repeat center center;
+    animation: loop2 4s infinite;
+}
+
+.about h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200%;
+}
+
+
+/*
+@keyframes color {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+*/
+
+@keyframes loop {
+    0% {
+        background-color: #fcfcfc;
+    }
+    50% {
+        background-color: #fcfcfc;
+        -moz-box-shadow: 0 4px 10px 2px #00000044;
+        -webkit-box-shadow: 0 4px 10px 2px #00000044;
+        box-shadow: 0 4px 20px 2px #00000044;
+    }
+    100% {
+        background-color: #fcfcfc;
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        background-color: #000000;
+    }
+    50% {
+        background-color: #000000;
+        -moz-box-shadow: 0 5px 10px 2px #5f5f5f;
+        -webkit-box-shadow: 0 5px 10px 2px #5f5f5f;
+        box-shadow: 0 5px 10px 2px #5f5f5f;
+        transform: translateY(-4px);
+    }
+    100% {
+        background-color: #000000;
+    }
+}
+
+@keyframes down {
+    50% {
+        transform: translateY(-10px);
+    }
+}
