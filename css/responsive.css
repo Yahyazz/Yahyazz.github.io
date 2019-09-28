@@ -1,18 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Tw Cen MT Condensed';
   margin: 0;
   padding: 0;
-  background: #000000 url(../image/bgblur.jpg) repeat fixed top left;
-  background-size: 1366px;
+  background: #000000 url(../image/bgblur.jpg) no-repeat fixed top left;
+  background-size: cover;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 div.landing {
-  max-width: 65%;
+  max-width: 70%;
   height: 400px;
   padding: 0;
   margin: 140px auto 0 auto;
   background: #ffffff url(../image/flower.jpg) repeat-y left;
-  background-size: 38%;
+  background-size: 32%;
   border-radius: 20px;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
@@ -21,13 +28,17 @@ div.landing {
 div.landing:hover {
   -webkit-box-shadow: 0 7px 20px #000000a2;
   box-shadow: 0 4px 14px #000000a2;
-  background-size: 40%;
+  background-size: 34%;
 }
 
 div.section {
-  min-width: 60%;
+  margin: 0;
+  padding: 0;
+  background-color: #3de7df69;
+  min-width: 68%;
   height: 400px;
   float: right;
+  text-align: center;
 }
 
 .section h1 {
@@ -41,9 +52,6 @@ div.section {
   font-family: 'Tw Cen MT Condensed';
   font-size: 30px;
   margin-top: 20px;
-  padding-left: 4px;
-  position: relative;
-  left: 20%;
   min-width: 60%;
   height: 35px;
   background-color: #ffffff;
@@ -64,8 +72,6 @@ input.text:focus {
 .submit {
   font-family: 'Tw Cen MT Condensed';
   font-size: 30px;
-  position: relative;
-  left: 35%;
   width: 30%;
   height: 40px;
   text-align: center;
@@ -119,21 +125,19 @@ a.fp:hover {
   }
 }
 
+@media (min-width: 361px) {
+  .section h1 {
+    font-size: 70px;
+  }
+}
+
 @media (max-width: 360px) {
   .section h1 {
     padding-top: 40px;
     font-size: 60px;
   }
   .text {
-    left: 4%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
